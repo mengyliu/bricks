@@ -20,7 +20,7 @@ function init() {
  
     renderer = new THREE.WebGLRenderer( { antialias: true } );
     renderer.setSize( window.innerWidth, window.innerHeight );
-    document.querySelector('#App').appendChild( renderer.domElement );
+    document.querySelector('.App').appendChild( renderer.domElement );
  
 }
  
@@ -34,3 +34,5 @@ function animate() {
     renderer.render( scene, camera );
  
 }
+
+export {init, animate};
