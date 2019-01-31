@@ -8,19 +8,19 @@ self.__precacheManifest = [
     "url": "/legooo/static/js/runtime~main.f5e9c291.js"
   },
   {
-    "revision": "bb55993c75ab4a7a83f2",
-    "url": "/legooo/static/js/main.bb55993c.chunk.js"
+    "revision": "87e3b50e048b6ee2c946",
+    "url": "/legooo/static/js/main.87e3b50e.chunk.js"
   },
   {
     "revision": "ce8c5c02d83e2d0c541f",
     "url": "/legooo/static/js/1.ce8c5c02.chunk.js"
   },
   {
-    "revision": "bb55993c75ab4a7a83f2",
-    "url": "/legooo/static/css/main.3edd9211.chunk.css"
+    "revision": "87e3b50e048b6ee2c946",
+    "url": "/legooo/static/css/main.348d0028.chunk.css"
   },
   {
-    "revision": "2016e85e83d283008494c5f2da6c9e4a",
+    "revision": "0c3307f91b7fcfdbce9cf65065655a50",
     "url": "/legooo/index.html"
   }
 ];
