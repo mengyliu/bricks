@@ -11,6 +11,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <div className="Toolbar">
+          <div className="logo">
+            <img className='logoimg' src={process.env.PUBLIC_URL + '/lego.png'}/>
+          </div>
+          <div className='appName'>| oLo</div>
+        </div>
+        <div className="World"></div>
       </div>
     );
   }

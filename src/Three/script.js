@@ -3,8 +3,9 @@ https://github.com/mrdoob/three.js/blob/master/examples/webgl_interactive_voxelp
 
 var THREE = window.THREE = require('three');
 require('three/examples/js/loaders/STLLoader');
-
+require('three/examples/js/controls/OrbitControls');
 var camera, scene, renderer;
+var controls;
 var plane;
 var mouse, raycaster, isShiftDown = false;
 
@@ -18,6 +19,7 @@ function init() {
     camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, 10000 );
     camera.position.set(500, 800, 1300);
     camera.lookAt(0,0,0)
+    controls = new THREE.OrbitControls( camera );
  
     scene = new THREE.Scene();
     scene.background = new THREE.Color (0xf8f8f8)
@@ -28,9 +30,6 @@ function init() {
     rollOverMesh = new THREE.Mesh( rollOverGeo, rollOverMaterial );
     scene.add( rollOverMesh );
 
-    //cubes
-    cubeGeo = new THREE.BoxGeometry( 50, 50, 50 );
-    cubeMaterial = new THREE.MeshNormalMaterial();
 
     //grid
     var gridHelper = new THREE.GridHelper(1000, 20, "#a8a8a8","#d0d0d0");
@@ -46,7 +45,7 @@ function init() {
     objects.push( plane );
 
     // lights
-    var ambientLight = new THREE.AmbientLight( 0x606060 );
+    var ambientLight = new THREE.AmbientLight( 0xf3f0f0);
     scene.add( ambientLight );
     var directionalLight = new THREE.DirectionalLight( 0xffffff );
     directionalLight.position.set( 1, 0.75, 0.5 ).normalize();
@@ -54,7 +53,7 @@ function init() {
     renderer = new THREE.WebGLRenderer( { antialias: true } );
     renderer.setPixelRatio( window.devicePixelRatio );
     renderer.setSize( window.innerWidth, window.innerHeight );
-    document.querySelector('.App').appendChild( renderer.domElement );
+    document.querySelector('.World').appendChild( renderer.domElement );
     document.addEventListener( 'mousemove', onDocumentMouseMove, false );
     document.addEventListener( 'mousedown', onDocumentMouseDown, false );
     document.addEventListener( 'keydown', onDocumentKeyDown, false );
@@ -103,7 +102,15 @@ function onDocumentMouseDown( event ) {
             //           roughness: 0.5,
             //         });
             //     var voxel = new THREE.Mesh(geometry, material);
-            var voxel = createMesh()
+            var material = new THREE.MeshStandardMaterial({
+            //"red"
+              color: "#ff0000",
+              // specular: CSSToHex(shadeColor(color, -20)),
+              // shininess: 5,
+              metalness: 0.4,
+              roughness: 0.5,
+            });
+            var voxel = createMesh(material)
             // voxel.rotation.set( -Math.PI / 2 ,0, 0);
             voxel.scale.set( 3, 3, 3 );
             voxel.castShadow = true;
@@ -146,24 +153,18 @@ function onDocumentKeyUp( event ) {
 
 function animate() {
     // requestAnimationFrame( animate );
+    controls.update();
     renderer.render( scene, camera );
 }
 
-function createMesh() {
+function createMesh(material) {
+    //defalut: 1*1
     var base = 17;
     let width = 17;
     let height = 20;
     let depth = 17;
     let knobSize = 6;
     var dimensions = new THREE.Vector3(1,1,1);
-    var material = new THREE.MeshStandardMaterial({
-    //"red"
-      color: "#ff0000",
-      // specular: CSSToHex(shadeColor(color, -20)),
-      // shininess: 5,
-      metalness: 0.4,
-      roughness: 0.5,
-    });
     var brickGeo = new THREE.Geometry();
     var cubeGeo = new THREE.BoxGeometry( width - 0.1, height - 0.1, depth - 0.1 );
     var cylinderGeo = new THREE.CylinderGeometry( knobSize, knobSize, knobSize, 20);
