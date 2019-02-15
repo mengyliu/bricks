@@ -1,14 +1,14 @@
 {
-  "main.css": "/legooo/static/css/main.b80defcf.chunk.css",
-  "main.js": "/legooo/static/js/main.b4ff1ff5.chunk.js",
-  "main.js.map": "/legooo/static/js/main.b4ff1ff5.chunk.js.map",
-  "static/js/1.4015cf5a.chunk.js": "/legooo/static/js/1.4015cf5a.chunk.js",
-  "static/js/1.4015cf5a.chunk.js.map": "/legooo/static/js/1.4015cf5a.chunk.js.map",
-  "runtime~main.js": "/legooo/static/js/runtime~main.f5e9c291.js",
-  "runtime~main.js.map": "/legooo/static/js/runtime~main.f5e9c291.js.map",
-  "static/media/logo.svg": "/legooo/static/media/logo.5d5d9eef.svg",
-  "static/css/main.b80defcf.chunk.css.map": "/legooo/static/css/main.b80defcf.chunk.css.map",
-  "index.html": "/legooo/index.html",
-  "precache-manifest.01a7c369f31cf28b395ddddf19d42c13.js": "/legooo/precache-manifest.01a7c369f31cf28b395ddddf19d42c13.js",
-  "service-worker.js": "/legooo/service-worker.js"
+  "main.css": "/bricks/static/css/main.b80defcf.chunk.css",
+  "main.js": "/bricks/static/js/main.029f5fe7.chunk.js",
+  "main.js.map": "/bricks/static/js/main.029f5fe7.chunk.js.map",
+  "static/js/1.4015cf5a.chunk.js": "/bricks/static/js/1.4015cf5a.chunk.js",
+  "static/js/1.4015cf5a.chunk.js.map": "/bricks/static/js/1.4015cf5a.chunk.js.map",
+  "runtime~main.js": "/bricks/static/js/runtime~main.667d57c1.js",
+  "runtime~main.js.map": "/bricks/static/js/runtime~main.667d57c1.js.map",
+  "static/media/logo.svg": "/bricks/static/media/logo.5d5d9eef.svg",
+  "static/css/main.b80defcf.chunk.css.map": "/bricks/static/css/main.b80defcf.chunk.css.map",
+  "index.html": "/bricks/index.html",
+  "precache-manifest.3c2b17adc43156bf5fc53d116baa6f65.js": "/bricks/precache-manifest.3c2b17adc43156bf5fc53d116baa6f65.js",
+  "service-worker.js": "/bricks/service-worker.js"
 }
