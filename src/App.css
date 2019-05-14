@@ -1,6 +1,7 @@
 .App {
   min-height: 100vh;
-  background-color: #282c34;
+  background-color: #26bdd0;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .App-logo {
@@ -9,7 +10,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #1d93a2;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,18 +36,97 @@
 .Toolbar {
   position: fixed;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  background-color: #19294b;
+  top: 20px;
+  opacity: 0.9;
+/*  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
   height: 60px;
   width: 100%;
   z-index: 2;
   color: white;
-  font-weight: 400;
-  font-size: 22px;
+  font-weight: 600;
+  font-size: 26px;
 }
+
+.Store {
+  position: fixed;
+  background-color: #051326;
+  opacity: 0.9;
+  /*box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1), 0 6px 40px 0 rgba(0, 0, 0, 0.09);*/
+  width: 11%;
+  z-index: 1;
+  color: white;
+  font-weight: 600;
+  font-size: 26px;
+  top: 90px;
+  padding-left: 20px;
+  padding-right: 15px;
+  left: 35px;
+  border-radius: 20px;
+}
+
+.Store p {
+  font-size: 15px;
+  margin-bottom: 2px;
+}
+
+.paletteContainer {
+  margin-bottom: 10px;
+}
+.brickContainer {
+  height: 100px;
+}
+.palette {
+  height: 23px;
+  width: 23px;
+  display: inline-block;
+  margin-right: 5px;
+  box-sizing: border-box;
+  border: 2px solid #051326;
+}
+
+.brick {
+  height: 23px;
+  width: 23px;
+  display: inline-block;
+  margin-right: 5px;
+  box-sizing: border-box;
+  border: 2px solid #051326;
+}
+
+.yellow {
+  background-color: #fece0a;
+}
+
+.palette:hover {
+  cursor: pointer !important;
+}
+
+.green {
+  background-color: #2e9850;
+}
+.red {
+  background-color: #ca3032;
+}
+
+.orange {
+  background-color: #f07438;
+}
+
+.blue {
+  background-color: #3a66a9;
+}
+
+.selected {
+  box-sizing: border-box;
+  border: 2px solid #57a1ea;
+}
+
+
 .logo {
   display:inline-block;
-  margin-left: 30px;
+  margin-left: 40px;
   height: 41px;
 }
 .logoimg {
@@ -55,4 +135,14 @@
 .appName{
   display:inline-block;
   padding: 15px;
+}
+
+.storeSelect {
+  margin-left: auto;
+  width: 80%;
+}
+
+.Store,.palette {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
