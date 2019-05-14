@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/bricks/static/js/runtime~main.667d57c1.js"
   },
   {
-    "revision": "a0d2ef821aa3b03ac228",
-    "url": "/bricks/static/js/main.a0d2ef82.chunk.js"
+    "revision": "83eba87d6a59bb5502fa",
+    "url": "/bricks/static/js/main.83eba87d.chunk.js"
   },
   {
     "revision": "b2bb38f298e96816aa3f",
     "url": "/bricks/static/js/1.b2bb38f2.chunk.js"
   },
   {
-    "revision": "a0d2ef821aa3b03ac228",
-    "url": "/bricks/static/css/main.e997fbcc.chunk.css"
+    "revision": "83eba87d6a59bb5502fa",
+    "url": "/bricks/static/css/main.14930615.chunk.css"
   },
   {
-    "revision": "c0b8b63c76d7bef0bd35ffec855e734f",
+    "revision": "c0bdeb89f4a65ce4f4a396d47676eca9",
     "url": "/bricks/index.html"
   }
 ];
