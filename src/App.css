@@ -1,6 +1,5 @@
 .App {
   min-height: 100vh;
-  background-color: #26bdd0;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -54,7 +53,6 @@
   background-color: #051326;
   opacity: 0.9;
   /*box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1), 0 6px 40px 0 rgba(0, 0, 0, 0.09);*/
-  width: 11%;
   z-index: 1;
   color: white;
   font-weight: 600;
